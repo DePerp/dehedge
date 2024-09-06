@@ -1,0 +1,29 @@
+{
+  "name": "dehedge",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "npx pm2 start ecosystem.config.json --watch && npx pm2 logs --timestamp --merge-logs",
+    "prod": "npx pm2 start ecosystem.config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@binance/connector": "^3.4.1",
+    "@pythnetwork/pyth-evm-js": "^1.1.0",
+    "binance": "^2.13.1",
+    "bingx-trading-api": "^1.1.5",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "write-excel-file": "^2.0.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0"
+  }
+}
